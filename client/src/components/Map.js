@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ReactMapGL, { Marker, Popup } from 'react-map-gl';
 
-function Map(foodTrucks) {
+function Map({ data = [] }) {
   const [viewport, setViewport] = useState({
     width: '100vw',
     height: '100vh',
@@ -22,7 +22,7 @@ function Map(foodTrucks) {
       onViewportChange={newViewport => setViewport(newViewport)}
     >
       {
-        foodTrucks.map((foodTruck) => (
+        data.map((foodTruck) => (
           <Marker>
             <button className="marker-btn" onClick={e => {
               e.preventDefault();

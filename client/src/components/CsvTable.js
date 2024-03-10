@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CsvTable(foodTrucks = []) {
+function CsvTable({ data = [] }) {
   return (
     <div>
       <table>
@@ -39,7 +39,7 @@ function CsvTable(foodTrucks = []) {
         </thead>
         <tbody>
           {
-            foodTrucks.map((record) => (
+            data.map((record) => (
               <tr key={record.locationId}>
                 <td>{record.locationId}</td>
                 <td>{record.applicant}</td>
