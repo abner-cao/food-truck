@@ -1,11 +1,13 @@
-import lombok.AllArgsConstructor;
-import lombok.Build;
-import lombok.Data;
+package com.company.foodtruck.model;
 
-@Data
+import lombok.*;
+
+@Getter
+@Setter
 @AllArgsConstructor
-@Build
-public class FookTruck {
+@NoArgsConstructor
+@Builder
+public class CsvRecord {
     private String locationId;
     private String applicant;
     private String facilityType;

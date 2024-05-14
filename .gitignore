@@ -1,1 +1,44 @@
+# .gitignore
+
+# 忽略所有的node_modules目录
+node_modules/
+
+# 忽略编译后的文件
+*.js
+*.map
+
+# 忽略日志文件
+logs/
+log.*
+
+# 忽略编译配置文件
+.babelrc
+.eslintrc
+
+# 忽略编辑器的配置文件
+.vscode/
+.idea/
+
+# 忽略操作系统生成的文件
 .DS_Store
+Thumbs.db
+
+# 忽略Docker配置文件
+docker-compose.yml
+Dockerfile
+
+# 忽略配置文件
+.env
+.env.local
+.env.*.local
+
+# 忽略测试覆盖率报告
+coverage/
+
+# 忽略依赖锁定文件
+yarn.lock
+package-lock.json
+
+# 忽略构建目录
+build/
+dist/
