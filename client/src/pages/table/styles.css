@@ -1,0 +1,14 @@
+.app-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 10px 5px;
+}
+
+.app-table th, td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+.app-table th {
+  background-color: #f2f2f2;
+}

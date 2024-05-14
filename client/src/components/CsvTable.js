@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CsvTable({ data = [] }) {
+function CsvTable({ data = [], loading = false }) {
   return (
     <div>
       <table>
